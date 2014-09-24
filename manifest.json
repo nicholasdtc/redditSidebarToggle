@@ -1,0 +1,14 @@
+{
+  "name": "Reddit Sidebar Toggle",
+  "options_page": "options.html",
+  "version": "0.5",
+  "manifest_version": 2,
+  "description": "Toggles visibility for reddit's sidebar",
+  "permissions": ["storage", "tabs", "*://*.reddit.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["jquery-1.11.0.min.js", "redditSidebarToggle.js"]
+    }
+  ]
+}
