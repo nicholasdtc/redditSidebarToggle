@@ -2,9 +2,10 @@
 || redditSidebarToggle ||
 =========================
 
-Adds a button on reddit.com to show/hide the sidebar and multireddits bar.
+This is a Google Chrome extension that adds a tab on reddit.com to show/hide the sidebar.
+Also there is an option to completely remove that multireddits bar to the left*.
 
-* Use the options menu on chrome to set your preference on the multireddits bar.
+* Use the extension's options menu on chrome to set your preference on the multireddits bar.
 
 ===========
 || TO-DO ||
