@@ -4,7 +4,6 @@
     "short_name": "RTS",
     "version": "0.5",
 
-    "default_locale": "en",
     "description": "Toggles visibility for reddit's sidebar",
     "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" },
 
