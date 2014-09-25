@@ -1,8 +1,10 @@
 /* Sidebar Toggle */
-
+var debugMode = false;
 // Remove grippy thing to the left
-chrome.storage.sync.get({hideGrippy: true}, function(items) 
+chrome.storage.sync.get({hideGrippy: true, debugMode: false}, function(items)
 {
+    debugMode = items.debugMode;
+
     if (items.hideGrippy)
     {
         $('.listing-chooser').remove();
@@ -10,6 +12,7 @@ chrome.storage.sync.get({hideGrippy: true}, function(items)
     }
 });
 
+if (debugMode) console.log('RedditSidebarToggle: init');
 
 // Init vars
 var LBL_SHOW = '<<< Show Sidebar <<<';
@@ -24,6 +27,7 @@ var initialWidth = sidebar.width();
 // Appends tab
 tabmenu.append('<li> <a href="javascript:void(0);" id="_rst_button"> </a> </li>');    
 mainButton = $('#_rst_button');
+if (debugMode) console.log('RedditSidebarToggle: button appended');
 
 // Check if it is already hidden, sets initial tab state
 if (localStorage['_rst_sidebarvisibility'] == 'hidden')
@@ -37,6 +41,8 @@ else
 // Tab Click event
 mainButton.unbind().click(function()
 {
+    if (debugMode) console.log('RedditSidebarToggle: button clicked');
+
     if (mainButton.hasClass(CLASS_SHOW))
         show();
     else
@@ -47,7 +53,7 @@ mainButton.unbind().click(function()
 
 function hide()
 {
-    console.log('rst: hide');
+    if (debugMode) console.log('RedditSidebarToggle: hiding sidebar');
     localStorage['_rst_sidebarvisibility'] = 'hidden';
     
     sidebar.animate({width:0}, 'fast', function()
@@ -59,7 +65,7 @@ function hide()
 
 function show()
 {
-    console.log('rst: show');
+    if (debugMode) console.log('RedditSidebarToggle: showing sidebar');
     localStorage['_rst_sidebarvisibility'] = 'visible';
     sidebar.show().animate({width:initialWidth}, 'fast', setButtonToHide);
 }

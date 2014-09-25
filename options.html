@@ -1,16 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head><title>Reddit Sidebar Toggle</title></head>
+<head><title>Reddit Sidebar Toggle - Options</title></head>
+
+<style>
+    body
+    {
+        font-family: ProximaNova, Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+
+    h3
+    {
+        text-align: center;
+    }
+
+    div.container
+    {
+        background-color: #F0F0F0;
+        margin: 33px auto;
+        width: 600px;
+        border: 1px solid #CACACA;
+        padding: 30px 46px;
+    }
+
+    #status
+    {
+        background-color: greenyellow;
+    }
+</style>
+
 <body>
 
-<h3>Reddit Sidebar Toggle</h3>
 
-<label>
-  <input type="checkbox" id="cb_hidegrippy" checked="checked">
-  Hide multireddits bar on startup
-</label>
 
-<div id="status"></div>
+<div class="container">
+
+    <h3>Reddit Sidebar Toggle Options</h3>
+
+    <label>
+      <input type="checkbox" id="cb_hidegrippy" checked="checked">
+      Hide multireddits bar on startup
+    </label>
+
+    <br/>
+
+    <label>
+        <input type="checkbox" id="cb_debugmode">
+        Debug mode
+    </label>
+
+    <div id="status"></div>
+</div>
+
+<div class="container">
+    <h3>About</h3>
+    <p>This is free and unencumbered software released into the public domain.
+
+       Anyone is free to copy, modify, publish, use, compile, sell, or
+       distribute this software, either in source code form or as a compiled
+       binary, for any purpose, commercial or non-commercial, and by any
+       means.</p>
+
+    <p>Feedback is welcome at nicholasdtc@gmail.com</p>
+</div>
+
 
 <script src="options.js"></script>
 </body>

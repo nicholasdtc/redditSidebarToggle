@@ -1,3 +1,13 @@
+============
+|| NOTICE ||
+============
+
+ATTENTION: I owe you nothing if you decide to use this extension. There is absolutely NO WARRANTY.
+It might not even work.
+You may distribute at will.
+
+nicholasdtc@gmail.com
+
 =========================
 || redditSidebarToggle ||
 =========================
@@ -12,6 +22,5 @@ Also there is an option to completely remove that multireddits bar to the left*.
 ===========
 
 - Add an option for a compact tab.
-- Remake options page and style.
 - Add 'back to top' button at the end of the page, make it scroll back to zero.
 - Maybe change the extension name since I'm adding a lot of other stuff.
