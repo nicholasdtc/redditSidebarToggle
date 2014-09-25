@@ -15,8 +15,8 @@ chrome.storage.sync.get({hideGrippy: true, debugMode: false}, function(items)
 if (debugMode) console.log('RedditSidebarToggle: init');
 
 // Init vars
-var LBL_SHOW = '<<< Show Sidebar <<<';
-var LBL_HIDE = '>>> Hide Sidebar >>>';
+var LBL_SHOW = '<<';
+var LBL_HIDE = '>>';
 var CLASS_SHOW = '_rst_show';
 var CLASS_HIDE = '_rst_hide';
 

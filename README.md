@@ -21,6 +21,5 @@ Also there is an option to completely remove that multireddits bar to the left*.
 || TO-DO ||
 ===========
 
-- Add an option for a compact tab.
 - Add 'back to top' button at the end of the page, make it scroll back to zero.
 - Maybe change the extension name since I'm adding a lot of other stuff.
